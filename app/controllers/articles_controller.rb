@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  def inxex
+  def index
     @articles = Article.all
   end
 
@@ -33,6 +33,14 @@ class ArticlesController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+    flash[:success] = "Article Deleted"
+
+    redirect_to root_path
   end
 
   private
