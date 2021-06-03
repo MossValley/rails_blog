@@ -1,24 +1,25 @@
-# README
+# Rails Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a basic blog webpage created using Ruby on Rails as part of The Odin Project's [Ruby on Rails project: Blog App](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/ruby-on-rails-ruby-on-rails)
 
-Things you may want to cover:
+This is currently pretty basic as it was my first time dealing with rails by myself. It's not visually much at this point but can be fleshed out.
 
-* Ruby version
+This will be deployed on [Heroku](https://devcenter.heroku.com/) soon and I will add a link to this [here].
 
-* System dependencies
+**Features**
 
-* Configuration
+* Articles - authorised users can add articles and delete articles and comments
 
-* Database creation
+* Comments - anyone can add a comment to any article
 
-* Database initialization
+**Things of note:**
 
-* How to run the test suite
+* Ruby version: 2.6.5
 
-* Services (job queues, cache servers, search engines, etc.)
+* Database: used PostGres instead of rails' native SQLite as Heroku relies on a database that can be stored outside of memory to avoid losing data
 
-* Deployment instructions
+**Things to add**
 
-* ...
+* Beautify the pages?
+
+* Add option for people to create a log on?
